@@ -14,6 +14,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className="App-title">{timelineData.person}'s social media feed</h1>
+        <div className="avatar-img">
+          <img src={timelineData.avatar} alt="Shiba Inu Avatar Image" />
+        </div>
       </header>
       <main className="App-main">
         {/* <TimelineEvent person="me" status="Hello, World!" timestamp="2018-05-18T22:19:40Z" /> */}

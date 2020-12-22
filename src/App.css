@@ -12,6 +12,16 @@
 }
 
 .App-main {
-  padding-top: 7rem;
+  padding-top: 15rem;
   background-color: #E6ECF0;
+}
+
+img {
+  width: 100px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.avatar-img {
+  text-align: center;
 }

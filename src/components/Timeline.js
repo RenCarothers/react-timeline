@@ -13,22 +13,18 @@ const Timeline = (props) => {
 
   const timeEvents = props.events.map((event, i) => {
     return (
-      <div>
-        <TimelineEvent
-          key={i} // is this key placed right? in docs, put it in a li but that puts bullets.  how would i access a specific timeline key?
-          person={event.person}
-          status={event.status}
-          timestamp={event.timeStamp} // why is this Stamp here but stamp in timelineEvents?
-        />
-      </div>
+      <ul>
+        <li key={i}> 
+        {/* is this key placed right? How would I access a specific timeline key? */}
+          <TimelineEvent
+            person={event.person}
+            status={event.status}
+            timestamp={event.timeStamp} // why is this Stamp here but stamp in timelineEvents?
+          />
+        </li>
+      </ul>
     );
   });
-
-  // const timeEvents = props.events.map(event => {
-  //   return (
-  //   <TimelineEvent person={event.person} status={event.status} timestamp={event.Timestamp} />
-  //   )
-  // });
 
   return (
     <section className="timeline">

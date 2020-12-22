@@ -3,3 +3,7 @@
   margin: auto;
   text-align: left;
 }
+
+.timeline ul {
+  list-style-type: none;
+}
